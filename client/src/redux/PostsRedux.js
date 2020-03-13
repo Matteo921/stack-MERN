@@ -1,5 +1,5 @@
 /* SELECTORS */
-
+export const getPosts = ({ posts }) => posts;
 /* ACTIONS */
 
 
@@ -37,4 +37,3 @@ export const loadPostsRequest = () => {
 export const LOAD_POSTS = createActionName('LOAD_POSTS');
 
 export const loadPosts = payload => ({ payload, type: LOAD_POSTS});
-export const getPosts = ({ posts }) => posts;
