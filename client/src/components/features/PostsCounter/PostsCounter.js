@@ -1,11 +1,22 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-class PostsCounter extends React.Component {
+class PostsCounter extends Component {
 
 	render() {
-		return (
-			<div>Posts counter</div>
-		);
+		const {posts} = this.props;
+
+		if (posts){
+			return (
+				<div>
+					Posts amount: { posts }
+				</div>
+			);
+		}
+			return (
+				<div>
+					<p>No posts to show. Try again.</p>
+				</div>
+			)
 	}
 };
 

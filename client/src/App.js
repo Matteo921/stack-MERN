@@ -16,8 +16,8 @@ class App extends React.Component {
           <Route path="/" exact components={Home} />
           <Route path="/posts" exact components={Posts} />
           <Route path="/contact" exact components={Contact} />
-          <Route path="/singlepost" exact components={SinglePost} />
-          <Route path="/addpost" exact components={AddPost} />
+          <Route path="/posts/:id" exact components={SinglePost} />
+          <Route path="/posts/new" exact components={AddPost} />
           <Route components={NotFound} />
         </Switch>
       </MainLayout>
