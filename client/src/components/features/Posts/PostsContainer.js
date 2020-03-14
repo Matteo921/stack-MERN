@@ -4,10 +4,10 @@ import Posts from '../../features/Posts/PostsContainer';
 
 const mapStateToProps = state => ({
 	posts: getPosts(state),
-})
+});
 
 const mapDispatchToProps = dispatch => ({
 	loadPosts: () => dispatch(loadPostsRequest()),
-}):
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(Posts);
