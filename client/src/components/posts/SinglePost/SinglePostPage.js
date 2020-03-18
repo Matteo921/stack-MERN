@@ -1,5 +1,5 @@
 import React from 'react';
-import SinglePost from '../../features/Posts/Posts';
+import SinglePost from '../../features/Posts/PostsContainer';
 const SinglePostPage = () => (
 	<div>
 		<SinglePost />

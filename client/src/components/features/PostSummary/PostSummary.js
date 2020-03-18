@@ -1,7 +1,7 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
 import './PostSummary.scss';
-
+import cutText from '../../../cutText/cutText'
 
 import Button from '../../common/Button/Button';
 import SmallTitle from '../../common/SmallTitle/SmallTitle';
@@ -10,7 +10,7 @@ import HtmlBox from '../../common/HtmlBox/HtmlBox'
 const PostSummary = ({ id,title,content }) => (
 	<article className="post-summary">
 		<SmallTitle> {title}</SmallTitle>
-		<HtmlBox>{content}</HtmlBox>
+		<HtmlBox>{cutText(content,250)}</HtmlBox>
 		<Button variant="primary">
 			Read more...
 		</Button>
