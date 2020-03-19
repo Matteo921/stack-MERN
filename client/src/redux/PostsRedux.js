@@ -7,6 +7,10 @@ export const getPosts = ({ posts }) => posts.data;
 export const getPostsNumber = ({ posts }) => posts.data.length;
 export const getRequest = ({ posts }) => posts.request;
 
+// action name creator
+
+const reducerName = 'posts';
+const createActionName = name => `app/${reducerName}/${name}`;
 // Thunk
 
 export const loadPostsRequest = () => {
@@ -27,10 +31,7 @@ export const loadPostsRequest = () => {
     };
 };
 
-// action name creator
 
-const reducerName = 'posts';
-const createActionName = name => `app/${reducerName}/${name}`;
 
 // Actions
 

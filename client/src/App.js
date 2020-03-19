@@ -7,8 +7,8 @@ import Home from './components/pages/Home/HomePage';
 import Posts from './components/pages/Posts/PostsPage';
 import Contact from './components/pages/Contact/ContactPage';
 import NotFound from './components/pages/NotFound/NotFoundPage';
-import SinglePost from './components/pages/SinglePost/SinglePostPage';
-import AddPost from './components/pages/AddPost/AddPostPage';
+import SinglePost from './components/posts/SinglePost/SinglePostPage';
+import AddPost from './components/posts/AddPost/AddPostPage';
 
 class App extends React.Component {
   state ={
